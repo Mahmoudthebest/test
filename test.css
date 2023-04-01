@@ -1,37 +1,75 @@
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
 .di{
     border: 2px solid black;
     background-color: grey;
-    display: inline-block;
     position: relative;
     margin-bottom: 5px;
+    max-width: 30%;
+    padding: 5px;
+    margin: 5px;
 
 }
 .ch{
     border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    padding: 2px;
     background-color: rgb(187, 129, 129);
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    top: 0;
     right: 0;
-    width: 90px;
+    width: 100px;
     text-align: center;
 }
 
 .be{
     border: 2px solid black;
-    background-color: rgb(80, 0, 0);
-    position: relative;
+    border-top: none;
+    border-right: none;
+    padding: 2px;
+    background-color: rgb(163, 74, 74);
+    position: absolute;
     top: 0;
     right: 0;
-    width: 90px;
+    width: 100px;
     text-align: center;
 }
 
 .su{
     border: 2px solid black;
-    background-color: rgb(117, 117, 34);
-    position: relative;
+    border-top: none;
+    border-right: none;
+    padding: 2px;
+    background-color: rgb(199, 191, 145);
+    position: absolute;
     top: 0;
     right: 0;
-    width: 90px;
+    width: 100px;
     text-align: center;
 }
+@media (min-width: 992px) {
+    .di {
+      width: 33.33%;
+      float: left;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .one, .two {
+      width: 50%;
+      float: left;
+    }
+    .three{
+        width: 100%;
+        float: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .di {
+      width: 100%;
+      float: none;
+    }
+  }
+
